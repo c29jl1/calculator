@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="calculator.css">
+        <script src="calculator.js" defer></script>
+    </head>
+    <body>
+        <h1 class="title">welcome to the calculator app</h1>
+        <div class="main-container">
+            <div class="calculator">
+                <div id="calculator-container">
+                    <input type="text" id="display" disabled>
+                    <div class="buttons">
+                        <button class = "specialButton" onclick="allClear()">ac</button>
+                        <button class = "button" onclick="clearEntry()">c</button>
+                        <button class = "button" onclick="appendToDisplay('%')">%</button>
+                        <button class = "button" onclick="appendToDisplay('√')">√</button>
+                        <button class = "button" onclick="appendToDisplay('7')">7</button>
+                        <button class = "button" onclick="appendToDisplay('8')">8</button>
+                        <button class = "button" onclick="appendToDisplay('9')">9</button>
+                        <button class = "button" onclick="appendToDisplay('/')">/</button>
+                        <button class = "button" onclick="appendToDisplay('4')">4</button>
+                        <button class = "button" onclick="appendToDisplay('5')">5</button>
+                        <button class = "button" onclick="appendToDisplay('6')">6</button>
+                        <button class = "button" onclick="appendToDisplay('*')">*</button>
+                        <button class = "button" onclick="appendToDisplay('1')">1</button>
+                        <button class = "button" onclick="appendToDisplay('2')">2</button>
+                        <button class = "button" onclick="appendToDisplay('3')">3</button>
+                        <button class = "button" onclick="appendToDisplay('-')">-</button>
+                        <button class = "button" onclick="appendToDisplay('0')">0</button>
+                        <button class = "button" onclick="appendToDisplay('.')">.</button>
+                        <button class = "button" onclick="calculateResult()">=</button>
+                        <button class = "button" onclick="appendToDisplay('+')">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="info-panel">
+                <div class="abbreviations">
+                    <h3 class="keyTitle">calculator abbreviations</h3>
+                    <ul class="keys">
+                        <li><strong>ac:</strong> all clear</li>
+                        <li><strong>c:</strong> clear entry</li>
+                    </ul>
+                </div>
+                <div class="shortcuts">
+                    <h3 class="keyTitle">Keyboard Shortcuts</h3>
+                    <ul class="keys">
+                        <li><strong>enter:</strong> calculate result</li>
+                        <li><strong>backspace:</strong> clear entry or all clear</li>
+                        <li><strong>0:</strong> zero</li>
+                        <li><strong>1-9:</strong> numbers</li>
+                        <li><strong>. :</strong> decimal</li>
+                        <li><strong>+ :</strong> addition</li>
+                        <li><strong>- :</strong> subtraction</li>
+                        <li><strong>* :</strong> multiplication</li>
+                        <li><strong>/ :</strong> division</li>
+                        <li><strong>% :</strong> percentage</li>
+                        <li><strong>√ :</strong> square root</li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <footer class="footer">created by: jason loo</footer>
+        <footer class="footer2">this is not a finalized calculator</footer>
+        <footer class="footer2">this is a work in progress</footer>
+    </body>
+</html>
